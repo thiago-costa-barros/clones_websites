@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="logo/png" href="img\logo.png" />
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <header>
+        <div class="divLogoHeader">
+            <img class="imgLogo" src="img\logo.png" alt="StarbucksLogo">
+        </div>
+        <div class="divMenuHeader">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">What's New</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </header>
+    <div class="midBody">
+        <div class="midBodyLeft">
+            <div class="h1MidBody">
+                <h2>It's not just Coffee</h2>
+            </div>
+            <div class="h2MidBody">
+                <h2>It's <span class="starbucksName">Starbucks</span></h2>
+            </div>
+            <div class="descriptionP">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum asperiores saepe itaque
+                    eaque,
+                    perspiciatis vitae nihil fuga, ipsa quo aspernatur maiores beatae amet corrupti enim fugiat sunt a
+                    recusandae.</p>
+            </div>
+            <div>
+                <input class="buttonLearnMore" type="button" value="Learn More">
+            </div>
+        </div>
+        <div class="midBodyRight">
+            <div class="imgBox"><img src="img\img1.png" alt="Cup" class="cup"></div>
+            <div class="social">
+                <ul class="socialList">
+                    <li><a href="#"><img src="img\facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img\instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="img\twitter.png" alt="twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="thumb">
+            <ul>
+                <li><img src="img\thumb1.png" alt="thumb1" onclick="imgSlider('img1.png');changeCircleColor('#017143')">
+                </li>
+                <li><img src="img\thumb2.png" alt="thumb2" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')">
+                </li>
+                <li><img src="img\thumb3.png" alt="thumb3" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')">
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.cup').scr = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>

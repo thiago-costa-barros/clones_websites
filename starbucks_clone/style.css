@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    /*border: 3px solid black;*/
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    height: 60px;
+    width: 60px;
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: 1px hidden transparent;
+    border-radius: 25px;
+}
+
+.divLogoHeader {
+    width: 50%;
+}
+
+.divMenuHeader {
+    width: 50%;
+    text-align: right;
+    font-size: 24px;
+}
+
+.divMenuHeader a:hover {
+
+    color: #ffffff;
+    background-color: #017143;
+    transition: 200ms ease-in-out;
+}
+
+.midBody {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.midBodyLeft {
+    width: 50%;
+    padding: 2% 5%;
+    transform: translateY(-20%);
+}
+
+.h1MidBody {
+    word-spacing: 3px;
+    font-size: 36px;
+    color: #333333;
+}
+
+.h2MidBody {
+    font-size: 36px;
+    color: #333333;
+}
+
+.starbucksName {
+    font-size: 68px;
+    color: #017143;
+}
+
+.descriptionP {
+    color: #333333;
+    font-weight: 500;
+}
+
+.descriptionP p {
+    padding-top: 2%;
+    padding-right: 7%;
+    margin-right: 18%;
+}
+
+.buttonLearnMore {
+    margin-top: 2%;
+    border: 1px hidden transparent;
+    padding: 8px 25px;
+    color: #ffffff;
+    background-color: #017143;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.buttonLearnMore:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.midBodyRight {
+    width: 50%;
+    text-align: right;
+}
+
+.imgBox {
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.imgBox img {
+    width: 330px;
+}
+
+.socialList {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialList li {
+    list-style: none;
+}
+
+.socialList li a {
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(0.6);
+}
+
+.socialList li a:hover {
+    transform: scale(0.8);
+    transition: 0.2s ease-in-out;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15%);
+}
+
+.thumb li img {
+    width: 60px;
+}
+
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(550px at right 750px);
+}
