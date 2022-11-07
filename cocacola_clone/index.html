@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke®</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" type="logo/png" href="images/coca-cola-logo-1-1.png" />
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <div class="divLogoHeader">
+                <img class="imgLogo" src="images/logo.png" alt="CocaColaLogo">
+            </div>
+            <div class="divMenuHeader">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">What's New</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </header>
+        <div class="midBody">
+            <div class="midBodyLeft">
+                <div class="h1MidBody">
+                    <h2>Taste the Feeling</h2>
+                </div>
+                <div class="descriptionP">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum asperiores saepe itaque
+                        eaque,
+                        perspiciatis vitae nihil fuga, ipsa quo aspernatur maiores beatae amet corrupti enim fugiat sunt
+                        a
+                        recusandae.</p>
+                </div>
+                <div>
+                    <input class="buttonLearnMore" type="button" value="Learn More">
+                </div>
+            </div>
+            <div class="midBodyRight">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images\cocacola1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\cocacola2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\cocacola3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\cocacola4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\cocacola5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\cocacola6.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div>
+            <ul class="thumb">
+                <li><a href="#"><img src="images/facebook.png" alt="thumb1"></a>
+                </li>
+                <li><a href="#"><img src="images/instagram.png" alt="thumb2"></a>
+                </li>
+                <li><a href="#"><img src="images/twitter.png" alt="thumb3"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 1000,
+                modifier: 1,
+                slideShadows: false,
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
