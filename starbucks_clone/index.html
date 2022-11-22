@@ -16,38 +16,40 @@
         <div class="divLogoHeader">
             <img class="imgLogo" src="img\logo.png" alt="StarbucksLogo">
         </div>
-        <div class="divMenuHeader">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">What's New</a>
-            <a href="#">Contact Us</a>
+        <div class="btn divMenuHeader">
+            <a class="selectMenu" target="_blank" href="https://starbucks.com.br/">Site Oficial</a>
+            <a class="selectMenu" target="_blank" href="https://qrco.de/bbutGK">Baixe nosso App</a>
+            <a class="selectMenu" target="_blank" href="https://historias.starbucks.com/br/">Nosso Blog</a>
+            <a class="selectMenu" target="_blank" href="https://linklist.bio/starbucksbrasil">Entre em contato</a>
         </div>
     </header>
     <div class="midBody">
         <div class="midBodyLeft">
             <div class="h1MidBody">
-                <h2>It's not just Coffee</h2>
+                <h2>Não é apenas café</h2>
             </div>
             <div class="h2MidBody">
-                <h2>It's <span class="starbucksName">Starbucks</span></h2>
+                <h2>É <span class="starbucksName">Starbucks</span></h2>
             </div>
             <div class="descriptionP">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum asperiores saepe itaque
-                    eaque,
-                    perspiciatis vitae nihil fuga, ipsa quo aspernatur maiores beatae amet corrupti enim fugiat sunt a
-                    recusandae.</p>
+                <p>Todos os dias esperamos fazer duas coisas: dividir um ótimo café com nossos amigos e ajudar a tornar
+                    o mundo um pouquinho melhor. Já era assim quando a primeira Starbucks abriu em 1971 e continua sendo
+                    assim até hoje.</p>
             </div>
             <div>
-                <input class="buttonLearnMore" type="button" value="Learn More">
+                <input class="buttonLearnMore" type="button" value="Leia mais">
             </div>
         </div>
         <div class="midBodyRight">
-            <div class="imgBox"><img src="img\img1.png" alt="Cup" class="cup"></div>
+            <div class="imgBox"><img src="img\img1.png" class="img_main"></div>
             <div class="social">
                 <ul class="socialList">
-                    <li><a href="#"><img src="img\facebook.png" alt="facebook"></a></li>
-                    <li><a href="#"><img src="img\instagram.png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="img\twitter.png" alt="twitter"></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/StarbucksBrasil/"><img src="img\facebook.png"
+                                alt="facebook"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/starbucksbrasil/"><img
+                                src="img\instagram.png" alt="instagram"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/StarbucksBrasil"><img src="img\twitter.png"
+                                alt="twitter"></a></li>
                 </ul>
             </div>
         </div>
@@ -55,23 +57,18 @@
     <footer>
         <div class="thumb">
             <ul>
-                <li><img src="img\thumb1.png" alt="thumb1" onclick="imgSlider('img1.png');changeCircleColor('#017143')">
+                <li><img src="img\thumb1.png" alt="thumb1" onclick="imgChange('img1.png')">
                 </li>
-                <li><img src="img\thumb2.png" alt="thumb2" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')">
+                <li><img src="img\thumb2.png" alt="thumb2" onclick="imgChange('img2.png')">
                 </li>
-                <li><img src="img\thumb3.png" alt="thumb3" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')">
+                <li><img src="img\thumb3.png" alt="thumb3" onclick="imgChange('img3.png')">
                 </li>
             </ul>
         </div>
     </footer>
     <script type="text/javascript">
-        function imgSlider(anything) {
-            document.querySelector('.cup').scr = anything;
-        }
-
-        function changeCircleColor(color) {
-            const circle = document.querySelector('circle');
-            circle.style.background = color;
+        function imgChange(anything) {
+            document.querySelector('.img_main').src = anything;
         }
     </script>
 </body>
